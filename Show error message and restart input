@@ -1,0 +1,5 @@
+la $a0, illegal_msg
+syscall
+j main # restart from the beginning
+start_fib:
+li $v0, 4 # service: print string
