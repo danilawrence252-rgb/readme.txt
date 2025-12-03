@@ -1,0 +1,5 @@
+la $a0, space
+syscall
+addu $t4, $t1, $t2 # next = previous + current
+move $t1, $t2 # shift current to previous
+move $t2, $t4 # next becomes current
