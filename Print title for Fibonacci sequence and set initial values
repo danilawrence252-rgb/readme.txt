@@ -1,0 +1,6 @@
+la $a0, fib_msg
+syscall
+li $t1, 0 # first term (F0)
+li $t2, 1 # second term (F1)
+li $t3, 0 # counter for how many terms printed
+fib_loop:
