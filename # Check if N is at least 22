@@ -1,0 +1,5 @@
+blez $t0, illegal # if N <= 0 → invalid
+blt $t0, 22, illegal # if N < 22 → invalid
+j start_fib # valid input → go compute Fibonacci
+illegal:
+li $v0, 4 # service: print string
