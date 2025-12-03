@@ -1,0 +1,5 @@
+bge $t3, $t0, end # if printed N terms → finish
+move $a0, $t1 # current Fibonacci term to print
+li $v0, 1
+syscall
+li $v0, 4 # print a separating space
